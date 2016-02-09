@@ -17,7 +17,8 @@
             
         </div>
 
-        <h2><u>Member Booking Info:</u></h2>
+        
+        <h2 runat="server" id="myHeader"><u>Member Booking Info:</u></h2>
 
 
         <asp:Label ID="lblmemberID" runat="server"  Text="Member ID: "></asp:Label><br />
