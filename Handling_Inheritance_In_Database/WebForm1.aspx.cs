@@ -19,6 +19,7 @@ namespace Handling_Inheritance_In_Database
             lblmemberID.Visible = false;
             lblmembername.Visible = false;
             lblError.Visible = false;
+            myHeader.Visible = true;
         }
 
 
@@ -38,7 +39,8 @@ namespace Handling_Inheritance_In_Database
                 lblmembername.Visible = true;
                 lblmembername.Text += membooking.MemberName;
                 DataTable dt = ConvertListToDataTable<FitnessClass>(membooking.FitnessClassList);
-
+                
+                myHeader.Visible = true;
                 Repeater1.DataSource = dt;
                 Repeater1.DataBind();
             }
